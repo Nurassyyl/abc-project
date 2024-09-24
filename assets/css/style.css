@@ -467,7 +467,7 @@ body {
     color: #999999;
 }
 
-.address-street p {
+.address-street__text {
     font-size: 22px;
     font-weight: 400;
     line-height: 30px;
@@ -1038,8 +1038,8 @@ body {
     }
 
     .general-title {
-        font-size: 24px;
-        line-height: 24px;
+        font-size: 40px;
+        line-height: 40px;
     }
 
     .feedbacks-box {
@@ -1055,11 +1055,19 @@ body {
     .address {
         margin-right: 0;
     }
+
+    .address-street__text,
+    .address-phone p a,
+    .email-address__address {
+        font-size: 16px;
+        margin-top: 10px;
+    }
 }
 
 @media screen and (max-width: 600px) {
     .about-images {
         flex-wrap: wrap;
+        gap: 0;
     }
 
     .footer-box {
