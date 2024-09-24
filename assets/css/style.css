@@ -1023,6 +1023,11 @@ body {
         display: none;
     }
 
+    .about-info__title {
+        font-size: 36px;
+        line-height: 60px;
+    }
+
     .main {
         height: auto;
     }
@@ -1038,8 +1043,8 @@ body {
     }
 
     .general-title {
-        font-size: 40px;
-        line-height: 40px;
+        font-size: 32px;
+        line-height: 32px;
     }
 
     .feedbacks-box {
@@ -1052,6 +1057,10 @@ body {
         margin-right: 0;
     }
 
+    .feedback__title {
+        font-size: 32px;
+    }
+
     .address {
         margin-right: 0;
     }
@@ -1061,6 +1070,14 @@ body {
     .email-address__address {
         font-size: 16px;
         margin-top: 10px;
+    }
+
+    .form-control {
+        font-size: 18px;
+    }
+
+    .form-control::placeholder {
+        font-size: 18px;
     }
 }
 
