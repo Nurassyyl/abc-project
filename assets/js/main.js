@@ -16,6 +16,7 @@ const openMenuBtn = document.querySelector(".hamburger-menu");
 const closeMenuBtn = document.querySelector(".menu__btn");
 const body = document.body;
 const menu = document.querySelector(".header-nav");
+const menuLinks = document.querySelectorAll(".header-menu__link");
 
 openMenuBtn.addEventListener('click', () => {
   menu.classList.add('active');
@@ -25,4 +26,11 @@ openMenuBtn.addEventListener('click', () => {
 closeMenuBtn.addEventListener('click', () => {
   menu.classList.remove('active');
   body.style.overflow = "auto";
+})
+
+menuLinks.forEach((link) => {
+  link.addEventListener('click', () => {
+    menu.classList.remove('active');
+    body.style.overflow = "auto";
+  })
 })
